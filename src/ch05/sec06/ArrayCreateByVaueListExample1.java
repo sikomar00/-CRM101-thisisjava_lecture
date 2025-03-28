@@ -3,7 +3,8 @@ package ch05.sec06;
 public class ArrayCreateByVaueListExample1 {
 	public static void main(String[] args) {
 		//배열 변수 선언과 배열 생성
-		String[] season = { "Spring", "Summer", "Fall", "Winter" };
+		String[] season = new String[4];
+		season = new String[] { "Spring", "Summer", "Fall", "Winter" };
 		
 		//배열의 항목값 읽기
 		System.out.println("season[0] : " + season[0]);
@@ -22,7 +23,7 @@ public class ArrayCreateByVaueListExample1 {
 		//총합과 평균 구하기
 		int sum = 0;
 		for(int i=0; i<3; i++) {
-			sum += scores[i];
+			sum += scores[i];  //83 + 90 + 87 
 		}
 		System.out.println("총합 : " + sum);		
 		double avg = (double) sum / 3;

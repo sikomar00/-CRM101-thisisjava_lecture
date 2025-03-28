@@ -9,7 +9,7 @@ public class IndexOfContainsExample {
 		String substring = subject.substring(location);
 		System.out.println(substring);
 		
-		location = subject.indexOf("자바");
+		location = subject.indexOf("자바"); //0
 		if(location != -1) {
 			System.out.println("자바와 관련된 책이군요");
 		} else {
